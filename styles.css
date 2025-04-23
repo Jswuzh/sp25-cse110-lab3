@@ -1,18 +1,18 @@
 /* ========================== GENERAL STYLING ========================== */
-/* ✔️ CSS Comment */
+/* done CSS Comment */
 :root {
   --main-bg: #f9f9f9;
   --accent: rgba(255, 100, 100, 0.7);
   --fallback: orange;
 }
 
-/* ✔️ Universal selector */
+/*  done Universal selector */
 * {
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
 }
 
-/* ✔️ Element & Color selectors */
+/*  done Element & Color selectors */
 body {
   background-color: var(--main-bg, var(--fallback));
   color: black;
@@ -21,40 +21,40 @@ body {
   max-width: 900px;
 }
 
-/* ✔️ ID selector */
+/* done ID selector */
 #meeting-title {
   text-align: center;
   color: rgb(70, 90, 255);
 }
 
-/* ✔️ Class selector & Pseudo-class */
+/* done Class selector & Pseudo-class */
 .subtitle:hover {
   color: color-mix(in srgb, red 60%, blue 40%);
 }
 
-/* ✔️ Attribute selector */
+/* done Attribute selector */
 input[type="text"] {
   border: 1px solid gray;
   padding: 0.5rem;
 }
 
-/* ✔️ Selector list */
+/* done Selector list */
 h2, h3 {
   color: #333;
   margin-bottom: 0.5rem;
 }
 
-/* ✔️ Descendant combinator */
+/* done Descendant combinator */
 section .highlight {
   background-color: yellow;
 }
 
-/* ✔️ Child combinator */
+/* done Child combinator */
 ul > li {
   margin-bottom: 5px;
 }
 
-/* ✔️ Sibling combinators */
+/* done Sibling combinators */
 .box + .box {
   border-color: purple;
 }
@@ -62,12 +62,12 @@ ul > li {
   background-color: lightblue;
 }
 
-/* ✔️ Combining two selectors */
+/* done Combining two selectors */
 h1.main-header {
   border-bottom: 2px solid black;
 }
 
-/* ✔️ Nested selector (2023) */
+/* done Nested selector (2023) */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -81,12 +81,12 @@ h1.main-header {
   }
 }
 
-/* ✔️ :has selector (2023) */
+/* done :has selector (2023) */
 section:has(.chart) {
   border: 2px dashed teal;
 }
 
-/* ✔️ Flexbox */
+/* done Flexbox */
 .form-grid {
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ section:has(.chart) {
   align-items: flex-start;
 }
 
-/* ✔️ Box model (long + short notation) */
+/* done Box model (long + short notation) */
 .chart {
   border-style: solid;
   border-width: 3px;
@@ -110,7 +110,7 @@ section:has(.chart) {
   margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
-/* ✔️ Display values */
+/* done Display values */
 .chart {
   display: block;
 }
@@ -118,7 +118,7 @@ section:has(.chart) {
   display: inline-block;
 }
 
-/* ✔️ Sizing */
+/* done Sizing */
 video {
   width: 100%;
   max-width: 400px;
@@ -126,7 +126,7 @@ video {
   height: auto;
 }
 
-/* ✔️ Position values */
+/* done Position values */
 .fixed-footer {
   position: sticky;
   bottom: 0;
@@ -135,12 +135,12 @@ video {
   padding: 1rem;
 }
 
-/* ✔️ Pseudo-classes */
+/* done Pseudo-classes */
 input:active {
   background-color: lightgreen;
 }
 
-/* ✔️ Responsive Media Query */
+/* done Responsive Media Query */
 @media screen and (max-width: 768px) {
   body {
     background-color: #eee;
