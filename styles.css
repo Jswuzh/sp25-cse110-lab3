@@ -29,7 +29,7 @@ body {
 
 /* done Class selector & Pseudo-class */
 .subtitle:hover {
-  color: color-mix(in srgb, red 60%, blue 40%);
+  color: purple;
 }
 
 /* done Attribute selector */
@@ -73,13 +73,12 @@ h1.main-header {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.grid-container {
-  .box {
+.grid-container .box{
     border: 1px solid black;
     padding: 10px;
     text-align: center;
   }
-}
+
 
 /* done :has selector (2023) */
 section:has(.chart) {
