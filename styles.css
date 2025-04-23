@@ -1,0 +1,156 @@
+/* ========================== GENERAL STYLING ========================== */
+/* ✔️ CSS Comment */
+:root {
+  --main-bg: #f9f9f9;
+  --accent: rgba(255, 100, 100, 0.7);
+  --fallback: orange;
+}
+
+/* ✔️ Universal selector */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* ✔️ Element & Color selectors */
+body {
+  background-color: var(--main-bg, var(--fallback));
+  color: black;
+  margin: auto;
+  padding: 1rem;
+  max-width: 900px;
+}
+
+/* ✔️ ID selector */
+#meeting-title {
+  text-align: center;
+  color: rgb(70, 90, 255);
+}
+
+/* ✔️ Class selector & Pseudo-class */
+.subtitle:hover {
+  color: color-mix(in srgb, red 60%, blue 40%);
+}
+
+/* ✔️ Attribute selector */
+input[type="text"] {
+  border: 1px solid gray;
+  padding: 0.5rem;
+}
+
+/* ✔️ Selector list */
+h2, h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* ✔️ Descendant combinator */
+section .highlight {
+  background-color: yellow;
+}
+
+/* ✔️ Child combinator */
+ul > li {
+  margin-bottom: 5px;
+}
+
+/* ✔️ Sibling combinators */
+.box + .box {
+  border-color: purple;
+}
+.box ~ .box {
+  background-color: lightblue;
+}
+
+/* ✔️ Combining two selectors */
+h1.main-header {
+  border-bottom: 2px solid black;
+}
+
+/* ✔️ Nested selector (2023) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.grid-container {
+  .box {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* ✔️ :has selector (2023) */
+section:has(.chart) {
+  border: 2px dashed teal;
+}
+
+/* ✔️ Flexbox */
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ✔️ Box model (long + short notation) */
+.chart {
+  border-style: solid;
+  border-width: 3px;
+  border-color: hsla(180, 80%, 60%, 0.8);
+  border-radius: 10px;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+/* ✔️ Display values */
+.chart {
+  display: block;
+}
+.subtitle {
+  display: inline-block;
+}
+
+/* ✔️ Sizing */
+video {
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+  height: auto;
+}
+
+/* ✔️ Position values */
+.fixed-footer {
+  position: sticky;
+  bottom: 0;
+  background: lightgray;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ✔️ Pseudo-classes */
+input:active {
+  background-color: lightgreen;
+}
+
+/* ✔️ Responsive Media Query */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #eee;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    flex-direction: column;
+  }
+}

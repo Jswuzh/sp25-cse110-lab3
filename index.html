@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>first meeting</title>
-  </head>
-  <body>
-    <h1>First Meeting</h1>
-    <p>This is my own meeting and today is April 14</p>
-    <h2>Attdence:</h2>
-    <p style="color:blue;">Ruyi Wu</p>
-    <h3>Material Cover:</h3>
-    <p> simply talk about game engine</p>
-    <p> talk about re engine and unreal engine main difference, and what they can do</p>
-    <h3> Meeting material graph</h3>
-    <img src="IMG_0129.png" alt="Some Chart" width="500" height="300">
-    <h3>record:</h3>
-    <video controls>
-    	<source src="screenshots/IMG_0131.mp4" type="video/mp4">
+<head>
+  <meta charset="UTF-8">
+  <title>First Meeting</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <style>
+    /* Internal CSS (✔️) */
+    h1 {
+      font-size: 2rem;
+      color: hsl(140, 50%, 40%);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <h1 id="meeting-title">📅 First Team Meeting</h1>
+    <p class="subtitle">Date: <span class="highlight">April 14</span></p>
+  </header>
+
+  <section class="attendance-section">
+    <h2>✔️ Attendance</h2>
+    <p style="color: orange;">Ruyi Wu</p> <!-- inline style (✔️) -->
+  </section>
+
+  <section class="topics">
+    <h3>🎮 Topics Covered</h3>
+    <ul>
+      <li>Game Engines Overview</li>
+      <li>RE Engine vs Unreal Engine</li>
+    </ul>
+  </section>
+
+  <section class="media-section">
+    <h3>📊 Meeting Visuals</h3>
+    <img src="IMG_0129.png" alt="chart image" class="chart">
+
+    <h3>🎥 Video Recording</h3>
+    <video width="400" controls>
+      <source src="screenshots/IMG_0131.mp4" type="video/mp4">
     </video>
-    <h3>audio record:</h3>
+
+    <h3>🎧 Audio Recording</h3>
     <audio controls>
-    	<source src="screenshots/vocal.mp3" type="audio/mp3">
+      <source src="screenshots/vocal.mp3" type="audio/mp3">
     </audio>
-    	
-    <h3> Attdence check:</h3>
-    <form action="/submit">
-    <input type = "text" id="fname" name = "fname" value="funny"><br>
-  	<input type="text" id="lname" name="lname" value="real funny"><br><br>
- 	<input type="submit" value="Submit">
+  </section>
+
+  <section class="grid-section">
+    <h3>📦 Grid Layout</h3>
+    <div class="grid-container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h3>📋 Attendance Form</h3>
+    <form action="/submit" class="form-grid">
+      <label>First Name:
+        <input type="text" name="fname" value="funny">
+      </label>
+      <label>Last Name:
+        <input type="text" name="lname" value="real funny">
+      </label>
+      <input type="submit" value="Submit">
     </form>
-    
-  </body>
+  </section>
+
+  <footer class="fixed-footer">📍 This is a sticky footer</footer>
+
+</body>
 </html>
+
